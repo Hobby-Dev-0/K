@@ -1,1 +1,2 @@
-from .var import Config
+from .var import *
+from .config import *
