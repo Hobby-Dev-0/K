@@ -146,7 +146,6 @@ def extra(shortname):
         sys.modules["jarvis"] = userbot
         sys.modules["support"] = userbot
         sys.modules["userbot"] = userbot
-        sys.modules["sql_helper"] = userbot.sql
         sys.modules["teleAndencento"] = userbot
         sys.modules["fridayAndencento"] = userbot
         sys.modules["jarvis.utils"] = userbot.utils
