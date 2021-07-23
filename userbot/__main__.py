@@ -13,9 +13,9 @@ from .session.main import *
 
 # let's get the bot ready                    
 async def add_bot(bot_token):
-    await bot.start(bot_token)
-    Andencento.me = await bot.get_me() 
-    Andencento.uid = telethon.utils.get_peer_id(bot.me)
+    await Andencento.start(bot_token)
+    Andencento.me = await Andencento.get_me() 
+    Andencento.uid = telethon.utils.get_peer_id(Andencento.me)
 
 if len(argv) not in (1, 3, 4):
     Andencento.disconnect()
