@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "from config"
+          find: "from Config"
 
-          replace: "from userbot.config"
+          replace: "from userbot.AndencentoConfig"
 
       - name: Create Pull Request
 
