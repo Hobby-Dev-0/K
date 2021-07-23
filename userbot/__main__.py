@@ -3,7 +3,7 @@ from sys import argv
 
 import telethon.utils
 
-from config import Config
+from .config import Config
 
 from . import *
 from .session.main import *
