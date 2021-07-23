@@ -75,8 +75,8 @@ def load_module(shortname):
         sys.modules["support"] = userbot
         sys.modules["userbot"] = userbot
         sys.modules["sql_helper"] = userbot.sql
-        sys.modules["teleAndencento"] = userbot
-        sys.modules["fridayAndencento"] = userbot
+        sys.modules["telebot"] = userbot
+        sys.modules["fridaybot"] = userbot
         sys.modules["jarvis.utils"] = userbot.utils
         sys.modules["uniborg.util"] = userbot.utils
         sys.modules["teleAndencento.utils"] = userbot.utils
@@ -100,7 +100,7 @@ def load_module(shortname):
         sys.modules["userbot.mainfiles.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["userbot.plugins." + shortname] = mod
+        sys.modules["plugins." + shortname] = mod
         LOGS.info("ANDENCENTO imported " + shortname)
 
 def extra(shortname):
