@@ -6,4 +6,4 @@ if ENV:
     from .config import Config
 else:
     if os.path.exists("config.py"):
-        from config import Development as Config
+        from userbot.config import Development as Config

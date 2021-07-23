@@ -9,7 +9,7 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from .. import *
 from ..utils import *
-from config import Config
+from userbot.config import Config
 from ..utils.modules import extra
 
 hl = Config.HANDLER
