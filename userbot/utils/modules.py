@@ -23,7 +23,7 @@ if ENV:
     from userbot.config import Config
 else:
     if os.path.exists("Config.py"):
-        from Config import Development as Config
+        from userbot.AndencentoConfig import Development as Config
 
 
 # load plugins
