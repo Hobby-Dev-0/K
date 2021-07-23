@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "tgAndencento"
+          find: "from var import Var"
 
-          replace: "tgbot"
+          replace: "from userbot.var import Var"
 
       - name: Create Pull Request
 
