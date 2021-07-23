@@ -6,7 +6,7 @@ from sys import argv
 
 import telethon.utils
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
-from config import Config
+from .config import Config
 from . import *
 from .utils import *
 from .session.main import *
