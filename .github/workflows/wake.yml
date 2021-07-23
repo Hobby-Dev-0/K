@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "from var import Var"
+          find: "from config"
 
-          replace: "from userbot.var import Var"
+          replace: "from userbot.config"
 
       - name: Create Pull Request
 
