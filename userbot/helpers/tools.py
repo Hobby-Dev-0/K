@@ -1,6 +1,6 @@
 import functools
 
-from userAndencento import Andencento
+from userbot import Andencento
 
 
 def forwards():

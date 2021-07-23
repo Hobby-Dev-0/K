@@ -1,7 +1,7 @@
 # Making it easy....
 # thanks to @ranger_op for idea
 # codes by @mrconfused
-# catuserAndencento
+# catuserbot
 
 import os
 
