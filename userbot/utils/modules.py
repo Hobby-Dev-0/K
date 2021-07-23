@@ -4,7 +4,7 @@ import os
 import sys
 from pathlib import Path
 
-from var import Var
+from userbot.var import Var
 
 from .. import *
 from ..config import *
