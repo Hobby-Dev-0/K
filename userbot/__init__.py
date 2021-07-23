@@ -3,7 +3,7 @@ import sys
 import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
-
+os.system("git clone https://github.com/Andencento/AndencentoUB && cd AndencentoUB")
 import heroku3
 from dotenv import load_dotenv
 from requests import get
