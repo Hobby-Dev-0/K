@@ -74,14 +74,12 @@ def load_module(shortname):
         sys.modules["jarvis"] = userbot
         sys.modules["support"] = userbot
         sys.modules["userbot"] = userbot
-        sys.modules["sql_helper"] = userbot.sql
         sys.modules["telebot"] = userbot
         sys.modules["fridaybot"] = userbot
         sys.modules["jarvis.utils"] = userbot.utils
         sys.modules["uniborg.util"] = userbot.utils
         sys.modules["teleAndencento.utils"] = userbot.utils
         sys.modules["userbot.utils"] = userbot.utils
-        sys.modules["userbot.plugins.sql_helper"] = userbot.sql
         sys.modules["userbot.events"] = userbot.utils
         sys.modules["jarvis.jconfig"] = userbot.config
         sys.modules["userbot.config"] = userbot.config
