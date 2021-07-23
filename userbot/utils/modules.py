@@ -156,7 +156,6 @@ def extra(shortname):
         sys.modules["jarvis.jconfig"] = userbot.config
         sys.modules["userbot.config"] = userbot.config
         sys.modules["fridayAndencento.utils"] = userbot.utils
-        sys.modules["userbot.plugins.sql_helper"] = userbot.sql
         sys.modules["fridayAndencento.Config"] = userbot.config
         sys.modules["userbot.uniborgConfig"] = userbot.config
         mod.edit_or_reply = edit_or_reply
