@@ -66,7 +66,7 @@ async def addons():
 async def Andencentoiosop():
     try:
         if Config.LOGGER_ID != 0:
-            await Andencento.tgAndencento.send_file(
+            await Andencento.tgbot.send_file(
                 Config.LOGGER_ID,
                 PIC,
                 caption=f"#START \n\nDeployed Andencento Successfully\n\n**Andencento - {ver}**\n\nType `{hl}ping` or `{hl}alive` to check! \n\nJoin [Andencneto Channel](t.me\n\n /Andencento) for Updates & [Andencento Chat](t.me/AndencentoSupport) for any query regarding Team Andencento",

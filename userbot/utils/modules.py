@@ -58,7 +58,7 @@ def load_module(shortname):
         mod.extremepro_cmd = admin_cmd
         mod.amanpandey_cmd = sudo_cmd
         mod.LOGS = LOGS
-        mod.tgAndencento = Andencento.tgAndencento
+        mod.tgbot = Andencento.tgbot
         mod.sudo_cmd = sudo_cmd
         sys.modules["userbot"] = userbot
         sys.modules["var"] = userbot.var
@@ -133,7 +133,7 @@ def extra(shortname):
         mod.extremepro_cmd = admin_cmd
         mod.amanpandey_cmd = sudo_cmd
         mod.LOGS = LOGS
-        mod.tgAndencento = Andencento.tgAndencento
+        mod.tgbot = Andencento.tgbot
         mod.sudo_cmd = sudo_cmd
         sys.modules["userbot"] = userbot
         sys.modules["userbot.utils"] = userbot.utils
