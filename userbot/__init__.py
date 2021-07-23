@@ -192,6 +192,52 @@ LASTMSG = {}
 ISAFK = False
 AFKREASON = None
 SUDO_LIST = {}
+import sys
+from sys import argv
+
+import telethon.utils
+
+from userbot.config import Config
+
+from .session.main import *
+from .utils import *
+
+
+# let's get the Andencento ready
+async def add_Andencento(Andencento_token):
+    await Andencento.start(Andencento_token)
+    Andencento.me = await Andencento.get_me()
+    Andencento.uid = telethon.utils.get_peer_id(Andencento.me)
+
+
+if len(argv) not in (1, 3, 4):
+    Andencento.disconnect()
+else:
+    Andencento.tgbot = None
+    if Config.BOT_TOKEN is not None:
+        print("CHECKING BOT USERNAME")
+        # ForTheGreatrerGood of beautification
+        Andencento.tgbot = TelegramClient(
+            "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
+        ).start(Andencento_token=Var.BOT_TOKEN)
+        Andencento.loop.run_until_complete(add_Andencento(Var.BOT_TOKEN))
+        print("CHECKING SUCCESS")
+    else:
+        Andencento.start()
+
+
+async def mod():
+    await asst()
+    await plugs()
+    await addons()
+
+
+Andencento.loop.run_until_complete(mod())
+Andencento.loop.create_task(op())
+Andencento.loop.create_task(Andencentoiosop())
+print("Andencento Successfully Deployed And Working Fine")
+
+
 
 import os
 
@@ -481,3 +527,21 @@ for binary, path in binaries.items():
     downloader = SmartDL(binary, path, progress_bar=False)
     downloader.start()
     os.chmod(path, 0o755)
+
+    
+    
+    
+    
+
+if len(sys.argv) not in (1, 3, 4):
+    Andencento.disconnect()
+else:
+    Andencento.run_until_disconnected()
+    noob.run_until_disconnected()
+    
+
+    
+    
+   
+if "__name__"=="__main__":
+    noob.run_until_disconnected()
