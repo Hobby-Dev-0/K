@@ -25,7 +25,7 @@ from .AndencentoConfig import Config
 
 versionop = "0.0.2"
 W2Hversion = versionop
-botversion = versionop
+Andencentoversion = versionop
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 from .session import Andencento
 
@@ -57,12 +57,12 @@ try:
 except Exception:
     HEROKU_APP = None
 
-    # Userbot logging feature switch.
+    # UserAndencento logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
     COMMAND_HAND_LER = os.environ.get("HANDLER", ".")
 
-    # Bleep Blop, this is a bot ;)
+    # Bleep Blop, this is a Andencento ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
     # Console verbose logging
@@ -84,7 +84,7 @@ except Exception:
     # OpenWeatherMap API Key
     OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
 
-    # Anti Spambot Config
+    # Anti SpamAndencento Config
     ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
 
     ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
@@ -160,7 +160,7 @@ for binary, path in binaries.items():
     downloader.start()
     os.chmod(path, 0o755)
 
-bot = Andencento
+Andencento = Andencento
 
 
 # global variables
@@ -353,7 +353,7 @@ if bool(ENV):
     except:
         pass
 
-    # Userbot logging feature switch.
+    # UserAndencento logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
     PATTERNS = os.environ.get("PATTERNS", ".;!,")
@@ -369,13 +369,13 @@ if bool(ENV):
     except:
         pass
 
-    # Userbot logging feature switch.
+    # UserAndencento logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
     PATTERNS = os.environ.get("PATTERNS", ".;!,")
     COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
 
-    # Bleep Blop, this is a bot ;)
+    # Bleep Blop, this is a Andencento ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
     # Console verbose logging
@@ -397,7 +397,7 @@ if bool(ENV):
     # OpenWeatherMap API Key
     OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
 
-    # Anti Spambot Config
+    # Anti SpamAndencento Config
     ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
 
     ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
@@ -406,7 +406,7 @@ if bool(ENV):
     F_BAN_LOGGER_GROUP = os.environ.get("F_BAN_LOGGER_GROUP", None)
 
     # make by LEGEND X
-    botnickname = os.environ.get("BOT_NICK_NAME", None)
+    Andencentonickname = os.environ.get("BOT_NICK_NAME", None)
 
     # Heroku Credentials for updater.
     HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))

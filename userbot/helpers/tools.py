@@ -1,6 +1,6 @@
 import functools
 
-from userbot import bot
+from userAndencento import Andencento
 
 
 def forwards():
@@ -21,8 +21,8 @@ def iadmin():
     def decorator(func):
         @functools.wraps(func)
         async def wrapper(event):
-            myid = await bot.get_me()
-            myperm = await bot.get_permissions(event.chat_id, myid)
+            myid = await Andencento.get_me()
+            myperm = await Andencento.get_permissions(event.chat_id, myid)
             if myperm.is_admin:
                 await func(event)
             if myperm.is_creator:
@@ -37,13 +37,13 @@ def iadmin():
     return decorator
 
 
-def if_bot():
+def if_Andencento():
     def decorator(func):
         @functools.wraps(func)
         async def wrapper(event):
             reply_msg = await event.get_reply_message()
             reply_msg.sender
-            if not reply_msg.sender.bot:
+            if not reply_msg.sender.Andencento:
                 await func(event)
             else:
                 await event.edit("That's a Bot I Guess. Please reply to actual users..")

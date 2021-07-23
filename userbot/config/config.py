@@ -18,7 +18,7 @@ class Config(object):
     APP_ID = os.environ.get("APP_ID", None)
     ANDENCENTO_SESSION = os.environ.get("ANDENCENTO_SESSION", None)
     I_AM_DEVELOPER = os.environ.get("I_AM_DEVELOPER", None)
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY, ./userbot/cache")
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY, ./userAndencento/cache")
     UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
     AUTH_TOKEN_DATA = os.environ.get("AUTH_TOKEN_DATA", None)
     if AUTH_TOKEN_DATA != None:
@@ -105,10 +105,10 @@ class Config(object):
     OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
         # Get your own ACCESS_KEY from http://api.screenshotlayer.com/api/capture
         # This is required for the @telegraph functionality.
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "userbot")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "userAndencento")
         # Get a Free API Key from OCR.Space
     OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
-        # Send .get_id in any group with all your administration bots (added)
+        # Send .get_id in any group with all your administration Andencentos (added)
     G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001169892177))
         # TG API limit. An album can have atmost 10 media!
     FBAN_LOGGER_GROUP = os.environ.get("FBAN_LOGGER_GROUP", None)
@@ -121,7 +121,7 @@ class Config(object):
         # Telegram BOT Token from @BotFather
         #spootifie
         #log
-        # set blacklist_chats where you do not want userbot's features
+        # set blacklist_chats where you do not want userAndencento's features
     UB_BLACK_LIST_CHAT = set(int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split())
         # maximum number of messages for antiflood
     MAX_ANTI_FLOOD_MESSAGES = 10
@@ -175,7 +175,7 @@ class Var(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     PRIVATE_GROUP_ID = os.environ.get("PM_LOG_ID", None)
     BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 7))
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY, ./userbot/cache")
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY, ./userAndencento/cache")
     CHATS_TO_MONITOR_FOR_ANTI_FLOOD = []
     COMMAND_HAND_LER = os.environ.get("HANDLER", ".")
     CHROME_BIN = os.environ.get("CHROME_BIN", "/app/.apt/usr/bin/google-chrome")

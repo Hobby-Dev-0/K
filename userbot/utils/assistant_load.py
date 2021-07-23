@@ -12,8 +12,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"userbot/assistant/{shortname}.py")
-        name = "userbot.assistant.{}".format(shortname)
+        path = Path(f"userAndencento/assistant/{shortname}.py")
+        name = "userAndencento.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -26,6 +26,6 @@ def start_assistant(shortname):
         name = "assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
-        mod.tgbot = Andencento.tgbot
+        mod.tgAndencento = Andencento.tgAndencento
         spec.loader.exec_module(mod)
         sys.modules["assistant" + shortname] = mod

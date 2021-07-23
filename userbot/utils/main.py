@@ -30,7 +30,7 @@ async def is_admin(client, chat_id, user_id):
 
 
 def register(**args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -79,8 +79,8 @@ def register(**args):
 
     def decorator(func):
         if not disable_edited:
-            bot.add_event_handler(func, events.MessageEdited(**args))
-        bot.add_event_handler(func, events.NewMessage(**args))
+            Andencento.add_event_handler(func, events.MessageEdited(**args))
+        Andencento.add_event_handler(func, events.NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except Exception:
@@ -91,7 +91,7 @@ def register(**args):
 
 
 def command(**args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
 
     stack = inspect.stack()
     previous_stack_frame = stack[1]

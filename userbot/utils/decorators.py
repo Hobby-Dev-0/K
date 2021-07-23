@@ -4,7 +4,7 @@ from pathlib import Path
 
 from telethon import events
 
-from .. import Andencento as bot
+from .. import Andencento as Andencento
 from .. import *
 from ..config import Config
 from ..helpers import *
@@ -12,7 +12,7 @@ from ..helpers import *
 # admin cmd or normal user cmd
 
 def admin_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -78,7 +78,7 @@ def admin_cmd(pattern=None, command=None, **args):
 
 
 def andencento_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -147,7 +147,7 @@ def andencento_cmd(pattern=None, command=None, **args):
 
 
 def extremepro_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -215,7 +215,7 @@ def extremepro_cmd(pattern=None, command=None, **args):
 
 
 def sudo_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -278,7 +278,7 @@ def sudo_cmd(pattern=None, command=None, **args):
 # https://docs.telethon.dev/en/latest/misc/changelog.html#breaking-changes
 
 def amanpandey_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
@@ -417,7 +417,7 @@ def register(**args):
 # command decorations
 
 def command(**args):
-    args["func"] = lambda e: e.via_bot_id is None
+    args["func"] = lambda e: e.via_Andencento_id is None
 
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -472,8 +472,8 @@ def command(**args):
 
     def decorator(func):
         if allow_edited_updates:
-            bot.add_event_handler(func, events.MessageEdited(**args))
-        bot.add_event_handler(func, events.NewMessage(**args))
+            Andencento.add_event_handler(func, events.MessageEdited(**args))
+        Andencento.add_event_handler(func, events.NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except BaseException:

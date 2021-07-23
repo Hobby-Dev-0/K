@@ -1,7 +1,7 @@
 # Making it easy....
 # thanks to @ranger_op for idea
 # codes by @mrconfused
-# catuserbot
+# catuserAndencento
 
 import os
 
@@ -98,7 +98,7 @@ async def cult_small_video(video_file, output_directory, start_time, end_time):
 
 
 async def make_gif(event, file):
-    chat = "@tgstogifbot"
+    chat = "@tgstogifAndencento"
     async with event.client.conversation(chat) as conv:
         try:
             await silently_send_message(conv, "/start")
@@ -113,7 +113,7 @@ async def make_gif(event, file):
             W2Hfile = await event.client.download_media(W2Hresponse, "./temp")
             return await unzip(W2Hfile)
         except YouBlockedUserError:
-            return "Unblock @tgstogifbot"
+            return "Unblock @tgstogifAndencento"
 
 
 async def silently_send_message(conv, text):
@@ -130,7 +130,7 @@ async def thumb_from_audio(audio_path, output):
 async def simpmusic(simp, QUALITY):
     search = simp
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+        "User-Agent": "Mozilla/5.0 (compatible; GoogleAndencento/2.1; +http://www.google.com/Andencento.html)"
     }
     html = requests.get(
         "https://www.youtube.com/results?search_query=" + search, headers=headers
@@ -162,7 +162,7 @@ name_dl = (
 async def simpmusicvideo(simp):
     search = simp
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+        "User-Agent": "Mozilla/5.0 (compatible; GoogleAndencento/2.1; +http://www.google.com/Andencento.html)"
     }
     html = requests.get(
         "https://www.youtube.com/results?search_query=" + search, headers=headers
@@ -235,11 +235,11 @@ async def solarize(imagefile, endname):
 
 
 # pranks....
-# source - https://nekobot.xyz/api
+# source - https://nekoAndencento.xyz/api
 
 
 async def iphonex(text):
-    r = requests.get(f"https://nekobot.xyz/api/imagegen?type=iphonex&url={text}").json()
+    r = requests.get(f"https://nekoAndencento.xyz/api/imagegen?type=iphonex&url={text}").json()
     aura = r.get("message")
     W2Hurl = url(aura)
     if not W2Hurl:
@@ -253,7 +253,7 @@ async def iphonex(text):
 
 async def baguette(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=baguette&url={text}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=baguette&url={text}"
     ).json()
     aura = r.get("message")
     W2Hurl = url(aura)
@@ -267,7 +267,7 @@ async def baguette(text):
 
 
 async def threats(text):
-    r = requests.get(f"https://nekobot.xyz/api/imagegen?type=threats&url={text}").json()
+    r = requests.get(f"https://nekoAndencento.xyz/api/imagegen?type=threats&url={text}").json()
     aura = r.get("message")
     W2Hurl = url(aura)
     if not W2Hurl:
@@ -282,7 +282,7 @@ async def threats(text):
 
 
 async def lolice(text):
-    r = requests.get(f"https://nekobot.xyz/api/imagegen?type=lolice&url={text}").json()
+    r = requests.get(f"https://nekoAndencento.xyz/api/imagegen?type=lolice&url={text}").json()
     aura = r.get("message")
     W2Hurl = url(aura)
     if not W2Hurl:
@@ -297,7 +297,7 @@ async def lolice(text):
 
 
 async def trash(text):
-    r = requests.get(f"https://nekobot.xyz/api/imagegen?type=trash&url={text}").json()
+    r = requests.get(f"https://nekoAndencento.xyz/api/imagegen?type=trash&url={text}").json()
     aura = r.get("message")
     W2Hurl = url(aura)
     if not W2Hurl:
@@ -312,7 +312,7 @@ async def trash(text):
 
 
 async def awooify(text):
-    r = requests.get(f"https://nekobot.xyz/api/imagegen?type=awooify&url={text}").json()
+    r = requests.get(f"https://nekoAndencento.xyz/api/imagegen?type=awooify&url={text}").json()
     aura = r.get("message")
     W2Hurl = url(aura)
     if not W2Hurl:
@@ -328,7 +328,7 @@ async def awooify(text):
 
 async def trap(text1, text2, text3):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=trap&name={text1}&author={text2}&image={text3}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=trap&name={text1}&author={text2}&image={text3}"
     ).json()
     aura = r.get("message")
     W2Hurl = url(aura)
@@ -345,7 +345,7 @@ async def trap(text1, text2, text3):
 
 async def phcomment(text1, text2, text3):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=phcomment&image={text1}&text={text2}&username={text3}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=phcomment&image={text1}&text={text2}&username={text3}"
     ).json()
     aura = r.get("message")
     W2Hurl = url(aura)
@@ -361,12 +361,12 @@ async def phcomment(text1, text2, text3):
 
 
 # tweets...
-# source - https://nekobot.xyz/api
+# source - https://nekoAndencento.xyz/api
 
 
 async def trumptweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=trumptweet&text={text}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=trumptweet&text={text}"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -381,7 +381,7 @@ async def trumptweet(text):
 
 async def changemymind(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=changemymind&text={text}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=changemymind&text={text}"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -396,7 +396,7 @@ async def changemymind(text):
 
 async def kannagen(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=kannagen&text={text}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=kannagen&text={text}"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -411,7 +411,7 @@ async def kannagen(text):
 
 async def moditweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=narendramodi"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=narendramodi"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -426,7 +426,7 @@ async def moditweet(text):
 
 async def miatweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=miakhalifa"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=miakhalifa"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -440,7 +440,7 @@ async def miatweet(text):
 
 async def dani(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=dani_daniels___"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=dani_daniels___"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -454,7 +454,7 @@ async def dani(text):
 
 async def papputweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=rahulgandhi"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=rahulgandhi"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -469,7 +469,7 @@ async def papputweet(text):
 
 async def sunnytweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=sunnyleone"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=sunnyleone"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -484,7 +484,7 @@ async def sunnytweet(text):
 
 async def sinstweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=johnnysins"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=johnnysins"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -499,7 +499,7 @@ async def sinstweet(text):
 
 async def taklatweet(text):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text}&username=Mahatma_Gandhi_"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text}&username=Mahatma_Gandhi_"
     ).json()
     wew = r.get("message")
     hburl = url(wew)
@@ -517,7 +517,7 @@ async def taklatweet(text):
 
 async def tweets(text1, text2):
     r = requests.get(
-        f"https://nekobot.xyz/api/imagegen?type=tweet&text={text1}&username={text2}"
+        f"https://nekoAndencento.xyz/api/imagegen?type=tweet&text={text1}&username={text2}"
     ).json()
     wew = r.get("message")
     hburl = url(wew)

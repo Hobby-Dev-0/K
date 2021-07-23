@@ -9,7 +9,7 @@ from Config import Config
 
 versionop = "0.0.2"
 W2Hversion = versionop
-botversion = versionop
+Andencentoversion = versionop
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 if Var.ANDENCENTO_SESSION:
